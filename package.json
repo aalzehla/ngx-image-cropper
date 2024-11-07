@@ -1,13 +1,13 @@
 {
   "name": "ngx-image-cropper-workspace",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start": "ng serve --port 8000 --public-host=0.0.0.0 --host=0.0.0.0",
     "start:lib": "ng build ngx-image-cropper --watch",
     "build": "ng build demo-app",
     "build:lib": "ng build ngx-image-cropper",
-    "publish:lib": "npm run build:lib && npm run copy:files && npm publish ./dist/ngx-image-cropper",
+    "publish:lib": "npm run build:lib && npm run copy:files && npm publish ./dist/ngx-image-cropper --access public",
     "pack:lib": "npm pack ./projects/ngx-image-cropper",
     "test": "ng test ngx-image-cropper",
     "lint": "ng lint",
